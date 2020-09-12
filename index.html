@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>にこにこ献立おみくじ</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="box">
+  <h1>にこにこ献立おみくじ</h1>
+    <p>
+      <input type="button" id="getResultBtn" value="今夜の献立を選ぶ！">
+    </p>
+    <div id="result">結果</div>
+    <div class="input">
+      <form>
+        <p>新しく料理を登録できます（長すぎる料理名は登録できません）</p>
+        <input id="main" type="text" placeholder="メインメニュー" maxlength="15" required/>
+        <input type="button" value="登録" onclick="mainInsert()" />
+        <input id="side" type="text" placeholder="サイドメニュー" />
+        <input type="button" value="登録" onclick="sideInsert()" />
+        <input id="soup" type="text" placeholder="スープ・汁物" />
+        <input type="button" value="登録" onclick="soupInsert()" />
+      </form>
+    <div id="display"></div>
+    </div>
+  </div>
+  <script src="js/app.js"></script>
+</body>
+</html>
